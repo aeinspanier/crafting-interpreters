@@ -146,4 +146,14 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
         return null;
     }
 
+    @Override
+    public Void visitVarStmt(Stmt.Var stmt) {
+        return null;
+    }
+
+    @Override
+    public Void visitVariableExpr(Expr.Variable expr) {
+        return null;
+    }
+
 }
