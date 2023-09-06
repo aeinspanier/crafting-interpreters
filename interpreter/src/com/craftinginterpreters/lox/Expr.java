@@ -5,14 +5,9 @@ abstract class Expr {
 
     interface Visitor<R> {
         R visitBinaryExpr(Binary expr);
-
         R visitGroupingExpr(Grouping expr);
-
         R visitLiteralExpr(Literal expr);
-
         R visitUnaryExpr(Unary expr);
-
-        <R> R accept(Visitor<R> visitor);
     }
 
     static class Binary extends Expr {
